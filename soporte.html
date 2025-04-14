@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soporte tecnico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581090700227-1e8f2c7289f4') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 5em;
+      margin: 0;
+      font-weight: 900;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+      color: #1a73e8;
+    }
+    .hero p {
+      font-size: 1.4em;
+      font-weight: 500;
+      color: #1a73e8;
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 250px;
+    }
+    .cta {
+      background-color: #1a73e8;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    ul li::before {
+      content: "✔️ ";
+      color: #1a73e8;
+    }
+    .principal {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #1a73e8;
+    }
+    .servicio-seccion {
+      margin-bottom: 40px;
+    }
+    .servicio-seccion h3 {
+      color: #1a73e8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Soporte Tecnico</strong></div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Soporte técnico confiable</h1>
+    <p>Para hogares, freelancers y pequeñas empresas</p>
+    <button class="cta" onclick="scrollToSection('servicios')">Conoce nuestros servicios</button>
+  </section>
+
+  <section class="section">
+    <h2>Sobre mí</h2>
+    <p>Soy Julian Andres Gomez Solano, tecnólogo en Implementación de Infraestructura de Tecnologías de la Información y estudiante de Ingeniería de Sistemas, con experiencia de dos años en el campo de soporte técnico de equipos de cómputo e impresoras.</p>
+    <p><strong>Atención presencial:</strong> Carrera 11 N° 22-a41</p>
+    <p><strong>Servicio presencial y a domicilio:</strong> Duitama y Sogamoso</p>
+    <p><strong>Servicio remoto:</strong> A nivel nacional</p>
+  </section>
+
+  <section class="section" id="servicios">
+    <h2>¿Qué servicios ofresco?</h2>
+
+    <div class="servicio-seccion">
+      <h3>Mantenimiento y reparación de equipos</h3>
+      <ul>
+        <li>Limpieza de hardware y software</li>
+        <li>Formateo de equipo</li>
+        <li>Instalación de sistemas operativos Windows 7, Windows 10, Windows 11</li>
+        <li>Instalación de programas Office, Autodesk, Adobe</li>
+        <li>Actualización de controladores</li>
+        <li>Cambio de partes</li>
+      </ul>
+    </div>
+
+    <div class="servicio-seccion">
+      <h3>Redes e infraestructura TIC</h3>
+      <ul>
+        <li>Instalación de repetidores y Access Point</li>
+        <li>Instalación y mantenimiento de cableado</li>
+        <li>Instalación de switches</li>
+        <li>Revisión de cámaras de seguridad CCTV</li>
+        <li>Revisión de cámaras de seguridad inalámbricas</li>
+      </ul>
+    </div>
+
+    <div class="servicio-seccion">
+      <h3>Mantenimiento de impresoras</h3>
+      <ul>
+        <li>Limpieza preventiva</li>
+        <li>Limpieza de cabezales</li>
+        <li>Test de inyectores</li>
+        <li>Reseteo</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Si quieres mi servicio?</p>
+    <button class="cta" onclick="window.location.href='https://wa.me/573133914476'">Escríbeme por WhatsApp</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Soporte Tecnico - Todos los derechos reservados</p>
+    <p>Correo: jgomezsolano361@gmail.com | Tel: +57 3133914476</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
